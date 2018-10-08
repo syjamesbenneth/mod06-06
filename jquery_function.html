@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Functions</title>
+	<script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js">
+	</script>
+</head>
+<body>
+
+	<p id="lorem">This is a paragraph</p>
+	<button id="btn1">Append text</button>
+
+	<script type="text/javascript">
+		$(document).ready(() => {
+			$("#btn1").click(()=>{
+				// $('p').append("<strong>Appended Text</strong>");
+				//modify code in such a way that it adds the text to the beggining of the paragraph (/prepend)
+
+				$('p').prepend("<strong>Appended Text</strong>");
+			});
+		});
+	</script>
+
+	
+
+</body>
+</html>

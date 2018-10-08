@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loop Exercises</title>
+	<script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js">
+	</script>
+</head>
+<body>
+
+<span id="whileloop"></span>
+<span id="dowhileloop"></span>
+<span id="forloop"></span>
+
+<hr>
+<!-- Display numbers 1 to 15 vertically
+<p id="test1"></p> -->
+<hr>
+
+<!-- Display numbers divisible by 3 from 1 to 30 vertically
+<p id="test2"></p> -->
+
+
+
+<script type="text/javascript">
+// 	var text = "";
+// 	var i = 0;
+// 	while (i < 10) {
+//     text += "<br>The number is " + i;
+//     i++;
+// }
+// document.getElementById("test1").innerHTML = text;
+
+// for (var i=1; i <= 20; i++)
+// {
+//     if (i % 15 == 0)
+//         console.log("FizzBuzz");
+//     else if (i % 3 == 0)
+//         console.log("Fizz");
+//     else if (i % 5 == 0)
+//         console.log("Buzz");
+//     else
+//         console.log(i);
+// }
+	//while loop
+	let whileCount = 1;
+	while(whileCount <= 15) {
+		$("#whileloop").append(whileCount + "<br>");
+		 whileCount++;
+}
+	//do while loop
+	let doCount = 1;
+	do{
+		if(doCount%3==0){
+		$("#dowhileloop").append(doCount + "");
+		}
+		doCount++;
+	} while(doCount <= 30); 
+
+
+//for loop
+for (count = 1; count <= 50; count++) {
+	if(count % 3 == 0 && count % 5 == 0) {
+		$("#forloop").append(count +"- fizzbuzz <br>");
+	} else if (count % 3 == 0) {
+		$("#forloop").append(count + "- fizz <br>");
+	} else if (count % 5 == 0) {
+		$("#forloop").append(count + "- buzz <br>");
+	} else {
+		$("#forloop").append(count + "- pop <br>");
+	}
+}
+
+
+
+</script>
+
+</body>
+</html>
